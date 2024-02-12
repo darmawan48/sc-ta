@@ -64,7 +64,7 @@ def start():
     st.write('Score 0 = Negative, 1 = Positive, 2 = Netral')
 
     fig = plt.figure(figsize=(15, 5))
-    sns.countplot(x='score', data=data)
+    sns.countplot(x='score', data=data, palette = "Set1")
     st.pyplot(fig)
 
 

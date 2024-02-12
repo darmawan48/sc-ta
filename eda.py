@@ -43,7 +43,7 @@ def start():
     st.write('### Plot Score Opini Customer Shopee mengenai COD')
     st.write('Score 1 = Tidak Baik, 2 = Tidak cukup baik. 3 = cukup, 4 = Baik, 5 = Baik Sekali')
     fig = plt.figure(figsize=(15, 5))
-    sns.countplot(x='score', data=data)
+    sns.countplot(x='score', data=data, palette = "Set1")
     st.pyplot(fig)
 
     
